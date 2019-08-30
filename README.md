@@ -1,6 +1,8 @@
 # bad_words
 A dart filter for English bad words.
 
+https://pub.dev/packages/bad_words
+
 ## Installation 
 ``` yaml
 bad_words: ^0.0.1
