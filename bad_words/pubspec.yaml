@@ -1,6 +1,6 @@
 name: bad_words
-description: A dart filter for bad words.
-version: 0.0.1
+description: A dart filter for bad words. This filter will allow you to make a simple check to tell if a string contains bad words as defined in the lib/word_list.dart file.
+version: 0.1.2
 author: Tyler Sustare <tylersustare@gmail.com>
 homepage: https://github.com/TylerSustare/dart_bad_words
 

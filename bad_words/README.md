@@ -3,7 +3,7 @@ A dart filter for English bad words.
 
 ## Installation 
 ``` yaml
-bad_words: ^0.0.1
+bad_words: ^0.1.0
 ```
 
 ## Usage
