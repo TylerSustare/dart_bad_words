@@ -1,3 +1,4 @@
+/// wordList is the array of bad word strings inspired by the `bad-words` javascript package
 const wordList = <String>[
   "4r5e",
   "5h1t",
@@ -575,6 +576,7 @@ const wordList = <String>[
   "peenus",
   "peinus",
   "pen1s",
+  "pen15",
   "penas",
   "penis-breath",
   "penus",
@@ -730,3 +732,6 @@ const wordList = <String>[
   "🔫",
   "💩"
 ];
+
+/// wordSet is the list of bad words as a set for quicker
+final wordSet = Set.from(wordList);

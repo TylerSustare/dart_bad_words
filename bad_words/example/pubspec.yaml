@@ -5,4 +5,4 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  bad_words: ^0.1.0
+  bad_words: ^0.2.0
