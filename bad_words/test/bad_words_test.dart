@@ -15,12 +15,14 @@ void main() {
   test('test clean method', () {
     final filter = Filter();
     // clean string
-    expect(filter.clean('test string without asterisks'), 'test string without asterisks');
+    expect(filter.clean('test string without asterisks'),
+        'test string without asterisks');
     // beginning of the string
     expect(filter.clean('fucking test string'), '******* test string');
     // end of the string
     expect(filter.clean('All Dodgers are sh!t'), 'All Dodgers are ****');
     // test more than one bad word
-    expect(filter.clean('Those shitty Dodgers are arschloch'), 'Those ****** Dodgers are *********');
+    expect(filter.clean('Those shitty Dodgers are arschloch'),
+        'Those ****** Dodgers are *********');
   });
 }

@@ -7,7 +7,9 @@ class Filter {
   /// isProfane returns a boolean value representing if the string provided contains a profane word
   bool isProfane(String stringToTest) {
     final lowerCaseStringToTest = stringToTest.toLowerCase();
-    return wordList.where((word) => lowerCaseStringToTest.contains(word)).isNotEmpty;
+    return wordList
+        .where((word) => lowerCaseStringToTest.contains(word))
+        .isNotEmpty;
   }
 
   /// replace tests a string, replacing bad words with an asterisk length string of equal length
