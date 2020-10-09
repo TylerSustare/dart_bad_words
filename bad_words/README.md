@@ -5,7 +5,7 @@ A dart filter for English bad words.
 ## Installation
 
 ```yaml
-bad_words: ^0.2.0
+bad_words: ^0.2.2
 ```
 
 ## Usage

@@ -3,6 +3,5 @@ environment:
   sdk: ">=2.2.0 <3.0.0"
 
 dependencies:
-  flutter:
-    sdk: flutter
-  bad_words: ^0.2.0
+  bad_words:
+    path: ../
