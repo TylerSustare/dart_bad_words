@@ -13,12 +13,10 @@ bad_words: ^0.2.2
 ```dart
 import 'package:bad_words/bad_words.dart';
 
-final filter = Filter();
-
-if (filter.isProfane('some string to test')) {
+if (Filter.isProfane('some string to test')) {
     // ... validation error etc.
 }
 
 // clean up a profane string
-final cleanString = filter.clean('some test string');
+final cleanString = Filter.clean('some test string');
 ```
