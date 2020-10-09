@@ -1,5 +1,5 @@
-/// wordList is the array of bad word strings inspired by the `bad-words` javascript package
-const wordList = <String>[
+/// badwords is a set of bad word strings inspired by the `bad-words` javascript package
+const badwords = <String>{
   "4r5e",
   "5h1t",
   "5hit",
@@ -471,19 +471,14 @@ const wordList = <String>[
   "bastardz",
   "basterds",
   "basterdz",
-  "biatch",
-  "blow job",
   "boffing",
   "buttwipe",
   "c0cks",
   "c0k",
-  "carpet muncher",
   "cawks",
-  "clit",
   "cnts",
   "cntz",
   "cock-head",
-  "cocksucker",
   "cuntz",
   "dild0",
   "dild0s",
@@ -504,17 +499,13 @@ const wordList = <String>[
   "faigs",
   "fart",
   "flipping the bird",
-  "fudge packer",
   "fukah",
   "fuken",
   "fukin",
   "fukk",
   "fukkah",
   "fukken",
-  "fukker",
-  "fukkin",
   "g00k",
-  "god-damned",
   "h00r",
   "h0ar",
   "h0re",
@@ -542,7 +533,6 @@ const wordList = <String>[
   "motha fuker",
   "motha fukkah",
   "motha fukker",
-  "mother fucker",
   "mother fukah",
   "mother fuker",
   "mother fukkah",
@@ -582,8 +572,6 @@ const wordList = <String>[
   "penus",
   "penuus",
   "phuc",
-  "phuck",
-  "phuk",
   "phuker",
   "phukker",
   "polac",
@@ -610,7 +598,6 @@ const wordList = <String>[
   "sh1ts",
   "sh1tter",
   "sh1tz",
-  "shitty",
   "shity",
   "shitz",
   "shyt",
@@ -731,7 +718,4 @@ const wordList = <String>[
   "🔪",
   "🔫",
   "💩"
-];
-
-/// wordSet is the list of bad words as a set for quicker
-final wordSet = Set.from(wordList);
+};
