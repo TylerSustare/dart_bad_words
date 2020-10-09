@@ -15,7 +15,7 @@ class Filter {
     final listToTest = stringToObfuscate.split(' ');
     final clean = listToTest.map((e) {
       if (wordSet.contains(e.toLowerCase())) {
-        return e.replaceAll(RegExp('.'), '*');
+        return ''.padLeft(e.length, '*');
       }
       return e;
     });
