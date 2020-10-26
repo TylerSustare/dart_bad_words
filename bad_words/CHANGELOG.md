@@ -21,3 +21,7 @@ Proper Dart fmt for more sweet, sweet pub points
 ## [0.2.2] - October 9, 2020.
 
 Removed unnecessary dependency on Flutter in response to https://github.com/TylerSustare/dart_bad_words/issues/4
+
+## [0.2.3] - October 26, 2020.
+
+`clean` method will clean bad words with spaces as well
