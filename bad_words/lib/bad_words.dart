@@ -15,23 +15,10 @@ class Filter {
   /// replace tests a string, replacing bad words with an asterisk length string of equal length
   String clean(String string) {
     wordList.forEach((badWord) {
-      try {
-        var badWordRegex = RegExp("($badWord)", caseSensitive: false);
-        if (string.contains(badWordRegex)) {
-          String replace = _replace(replacer: '*', word: badWord);
-          print('badWord');
-          print(badWord);
-          print('badWordRegex');
-          print(badWordRegex);
-          print('replace');
-          print(replace);
-          string = string.replaceAll(badWordRegex, replace);
-        }
-      } catch (e) {
-        print('*********************');
-        print(badWord);
-        print(e);
-        print('*********************');
+      var badWordRegex = RegExp("($badWord)", caseSensitive: false);
+      if (string.contains(badWordRegex)) {
+        String replace = _replace(replacer: '*', word: badWord);
+        string = string.replaceAll(badWordRegex, replace);
       }
     });
     return string;
@@ -42,7 +29,7 @@ class Filter {
     for (var i = 0; i < word.length; i++) {
       if (word[i] == ' ') {
         chars += ' ';
-      } else {
+      } else if (word[i] != '\\') {
         chars += replacer;
       }
     }
