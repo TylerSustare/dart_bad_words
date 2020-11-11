@@ -18,11 +18,20 @@ void main() {
     expect(filter.clean('test string without asterisks'),
         'test string without asterisks');
     // beginning of the string
-    expect(filter.clean('fucking test string'), '******* test string');
-    // end of the string
-    expect(filter.clean('All Dodgers are sh!t'), 'All Dodgers are ****');
+    expect(filter.clean('fucking test string'), '****ing test string');
+
     // test more than one bad word
     expect(filter.clean('Those shitty Dodgers are arschloch'),
-        'Those ****** Dodgers are *********');
+        'Those ****ty Dodgers are *********');
+  });
+
+  test('test exclamation in word', () {
+    expect(Filter().clean('All Dodgers are sh!t'), 'All Dodgers are ****');
+    expect(Filter().clean('All Dodgers are sh!+'), 'All Dodgers are ****');
+  });
+
+  test('test clean method with spaces', () {
+    final filter = Filter();
+    expect(filter.clean('carpet muncher'), '****** *******');
   });
 }
