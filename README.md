@@ -7,7 +7,7 @@ https://pub.dev/packages/bad_words
 ## Installation
 
 ```yaml
-bad_words: ^0.2.2
+bad_words: ^0.3.0
 ```
 
 ## Usage
