@@ -21,3 +21,7 @@ Proper Dart fmt for more sweet, sweet pub points
 ## [0.2.2] - October 9, 2020.
 
 Removed unnecessary dependency on Flutter in response to https://github.com/TylerSustare/dart_bad_words/issues/4
+
+## [0.3.0] - January 31, 2022
+
+Add support for sound null safety
